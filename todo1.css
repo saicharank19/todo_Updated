@@ -1,0 +1,169 @@
+
+ 
+.label-container:hover {
+    color: white;
+    background-color: rgb(123, 137, 201);
+    border-color: #F0c289;
+    transition: 0.3s;
+}
+
+li {
+    transition: 500ms;
+}
+
+button:hover {
+    background-color: rgb(123, 137, 201);
+    transition: 0.3s;
+}
+
+.add-todo-button-save {
+    margin-top: 10px;
+    color: white;
+    background-color: rgba(123, 137, 201, 0.5);
+    font-family: "Roboto";
+    border-radius: 10px;
+    height: 50px;
+    font-size: 18px;
+    border-width: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
+    transition: 0.5s;
+}
+
+::placeholder {
+    color: white;
+}
+
+.list-styles {
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+body {
+    background-image: url("https://res.cloudinary.com/df3djequc/image/upload/v1677493638/pexels-tirachard-kumtanom-733852_adlfwi.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 0px;
+}
+
+.todos-heading {
+    color: rgb(123, 137, 201);
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 46px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.create-task-heading {
+    font-family: "Roboto";
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.create-task-heading-subpart {
+    font-family: "Roboto";
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.todo-items-heading {
+    font-family: "Roboto";
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.todo-items-heading-subpart {
+    font-family: "Roboto";
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.todo-items-container {
+    margin: 0px;
+    padding: 0px;
+}
+
+.todo-item-container {
+    margin-top: 15px;
+}
+
+.todo-user-input {
+    color: white;
+    background-color: rgba(66, 67, 71, 0.5);
+    height: 50px;
+    width: 80%;
+    border-width: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 15px;
+}
+
+.add-todo-button {
+    color: white;
+    background-color: rgba(66, 67, 71, 0.5);
+    font-family: "Roboto";
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 50px;
+    font-size: 18px;
+    border-width: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
+    transition: 0.5s;
+}
+
+.label-container {
+    background-color: #F0c289;
+    width: 80%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #096f92;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+.checkbox-input {
+    width: 20px;
+    height: 20px;
+    margin-top: 12px;
+    margin-right: 12px;
+}
+
+.checkbox-label {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    width: 80vw;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+}
+
+i:hover {
+    scale: 1.5;
+    transition: 0.5s;
+}
+
+.delete-icon-container {
+    text-align: right;
+    width: 18%;
+}
+
+.delete-icon {
+    padding: 15px;
+    transition: 0.5s;
+}
+
+.checked {
+    text-decoration: line-through;
+}

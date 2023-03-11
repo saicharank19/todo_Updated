@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <link rel="stylesheet" href="todo1.css"/>
+</head>
+
+<body>
+    <div class="container todos-bg-container">
+        <div class="row">
+            <div class="col-12 ">
+                <h1 class="todos-heading">Todos</h1>
+                <h1 class="create-task-heading">Create <span class="create-task-heading-subpart">Task</span></h1>
+                <div class="d-flex flex-row mt-3 mb-5">
+                    <input class="text todo-user-input" placeholder="What needs to be done?" id="todoUserInput" />
+                    <button class="add-todo-button" id="addTodoButton">Add</button>
+                </div>
+                <h1 class="todo-items-heading">My <span class="create-task-heading-subpart">Tasks</span></h1>
+                <ul class="todo-items-container" id="todoItemsContainer"></ul>
+                <button class="add-todo-button-save" id="saveTodoButton">Save</button>
+            </div>
+        </div>
+    </div>
+<script src="todo1.js"></script>
+</body>
+
+</html>
