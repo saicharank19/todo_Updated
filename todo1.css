@@ -1,7 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
 
- 
+.todo-bg-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+#selectItems {
+    background-color: rgb(123, 137, 201);
+    margin-left: 20;
+    position: relative;
+    padding-left: 10px;
+    border-radius: 6px;
+    height: 35px;
+    border: none;
+    color: white;
+}
+
+.delete-anim {
+    transform: rotateY(90deg);
+    opacity: 0;
+    transition: 0.5s;
+}
+
 .label-container:hover {
+    box-shadow: none;
     color: white;
     background-color: rgb(123, 137, 201);
     border-color: #F0c289;
@@ -20,7 +44,7 @@ button:hover {
 .add-todo-button-save {
     margin-top: 10px;
     color: white;
-    background-color: rgba(123, 137, 201, 0.5);
+    background-color: rgb(123, 137, 201);
     font-family: "Roboto";
     border-radius: 10px;
     height: 50px;
@@ -60,6 +84,9 @@ body {
 }
 
 .create-task-heading {
+    display: inline;
+    margin-right: 10px;
+    color: rgb(123, 137, 201);
     font-family: "Roboto";
     font-size: 32px;
     font-weight: 700;
@@ -94,9 +121,10 @@ body {
 
 .todo-user-input {
     color: white;
-    background-color: rgba(66, 67, 71, 0.5);
+    background-color: rgba(66, 67, 71, 0.7);
     height: 50px;
-    width: 80%;
+    width: 80vw;
+    max-width: 550px;
     border-width: 0px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -105,12 +133,12 @@ body {
 
 .add-todo-button {
     color: white;
-    background-color: rgba(66, 67, 71, 0.5);
+    background-color: rgba(66, 67, 71, 0.7);
     font-family: "Roboto";
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     height: 50px;
-    font-size: 18px;
+    font-size: 30px;
     border-width: 0px;
     padding-right: 20px;
     padding-left: 20px;
@@ -118,11 +146,13 @@ body {
 }
 
 .label-container {
+    box-shadow: 0px 4px 6px 0px rgb(66, 67, 71);
     background-color: #F0c289;
-    width: 80%;
+    width: 80vw;
+    max-width: 450px;
     border-style: solid;
     border-width: 5px;
-    border-color: #096f92;
+    border-color: rgb(123, 137, 201);
     border-right: none;
     border-top: none;
     border-bottom: none;
@@ -150,10 +180,6 @@ body {
     border-radius: 5px;
 }
 
-i:hover {
-    scale: 1.5;
-    transition: 0.5s;
-}
 
 .delete-icon-container {
     text-align: right;
@@ -161,8 +187,8 @@ i:hover {
 }
 
 .delete-icon {
+    cursor: pointer;
     padding: 15px;
-    transition: 0.5s;
 }
 
 .checked {

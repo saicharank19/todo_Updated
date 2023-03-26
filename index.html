@@ -11,18 +11,24 @@
 </head>
 
 <body>
-    <div class="container todos-bg-container">
-        <div class="row">
-            <div class="col-12 ">
+    <div class="container">
+        <div>
+            <div class="todo-bg-container">
                 <h1 class="todos-heading">Todos</h1>
-                <h1 class="create-task-heading">Create <span class="create-task-heading-subpart">Task</span></h1>
-                <div class="d-flex flex-row mt-3 mb-5">
+                <div class="d-flex flex-row mt-5 mb-3">
                     <input class="text todo-user-input" placeholder="What needs to be done?" id="todoUserInput" />
-                    <button class="add-todo-button" id="addTodoButton">Add</button>
+                    <button class="add-todo-button" id="addTodoButton">+</button>
                 </div>
-                <h1 class="todo-items-heading">My <span class="create-task-heading-subpart">Tasks</span></h1>
-                <ul class="todo-items-container" id="todoItemsContainer"></ul>
-                <button class="add-todo-button-save" id="saveTodoButton">Save</button>
+                <div class="mt-3">
+                    <h1 class="create-task-heading">Create <span class="create-task-heading-subpart">Task</span></h1>
+                    <select id="selectItems" class="mb-5">
+                        <option id="all" value="all" selected>All</option>
+                        <option id="completed" value="completed">Completed</option>
+                        <option id="notCompleted" value="not-completed">Not-Completed</option>
+                    </select>
+                    <ul class="todo-items-container mb-3" id="todoItemsContainer"></ul>
+                    <button class="add-todo-button-save" id="saveTodoButton">Save</button>
+                </div>
             </div>
         </div>
     </div>
