@@ -2,6 +2,8 @@
 <html>
 
 <head>
+    <script src="https://kit.fontawesome.com/b5ae37552e.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="todo1.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -11,23 +13,42 @@
 </head>
 
 <body>
-    <div class="container">
-        <div>
-            <div class="todo-bg-container">
-                <h1 class="todos-heading">Todos</h1>
-                <div class="d-flex flex-row mt-5 mb-3">
-                    <input class="text todo-user-input" placeholder="What needs to be done?" id="todoUserInput" />
-                    <button class="add-todo-button" id="addTodoButton">+</button>
-                </div>
-                <div class="mt-3">
-                    <h1 class="create-task-heading">Create <span class="create-task-heading-subpart">Task</span></h1>
-                    <select id="selectItems" class="mb-5">
-                        <option id="all" value="all" selected>All</option>
-                        <option id="completed" value="completed">Completed</option>
-                        <option id="notCompleted" value="not-completed">Not-Completed</option>
-                    </select>
-                    <ul class="todo-items-container mb-3" id="todoItemsContainer"></ul>
-                    <button class="add-todo-button-save" id="saveTodoButton">Save</button>
+    <div id="bgContainer" class="bg-container">
+        <div class="container">
+            <div>
+                <div class="todo-bg-container">
+                    <h1 id="lightHeading" class="todos-heading">Todos</h1>
+                    <div class="d-flex flex-row mt-5 mb-3">
+                        <input class="text todo-user-input" placeholder="What needs to be done?" id="todoUserInput" />
+                        <button class="add-todo-button" id="addTodoButton">+</button>
+                    </div>
+                    <div id="bottomSection" class="mt-3">
+                        <h1 id="createTaskHeading" class="create-task-heading">Create <span class="create-task-heading-subpart">Task</span></h1>
+                        <select id="selectItems" class="select-items-light mb-5">
+                            <option id="all" value="all" selected>All</option>
+                            <option id="completed" value="completed">Completed</option>
+                            <option id="notCompleted" value="pending">Pending</option>
+                        </select>
+                        <ul class="todo-items-container mb-3" id="todoItemsContainer">
+                            <!--  <li class="d-flex flex-row">
+                               <i class="fa-sharp fa-solid fa-pencil pencil"></i>
+                               <div class="d-flex flex-row label-container">
+                                   <div class="checkbox-label">Create Task Here</div>
+                                   <div>
+                                       <i class= "fa-solid fa-trash-can delete-icon"></i>
+                                   </div>
+                               </div>
+                           </li> -->
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <button class="add-todo-button-save" id="saveTodoButton">Save</button>
+                            <div id="toggleBtn">
+                                <i id="toggleOff" class="fa-solid fa-toggle-off toggle-off-icon"></i>
+                                <i id="toggleOn" class="fa-solid fa-toggle-on toggle-on-icon d-none"></i>
+                            </div>
+                            <input class="d-none" id="isDarkMode" type="checkbox" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
